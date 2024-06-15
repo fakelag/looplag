@@ -1,0 +1,36 @@
+{
+  "name": "looplag",
+  "version": "0.0.1",
+  "description": "NodeJS event loop lag benchmarking library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakelag/looplag.git"
+  },
+  "keywords": [
+    "eventloop",
+    "event-loop",
+    "lag",
+    "benchmark"
+  ],
+  "author": "fakelag",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/fakelag/looplag/issues"
+  },
+  "homepage": "https://github.com/fakelag/looplag#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
+}
